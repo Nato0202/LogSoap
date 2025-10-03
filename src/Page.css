@@ -1,0 +1,41 @@
+.page-container {
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #b33a3a;
+}
+
+.content {
+  max-width: 800px;
+}
+
+.page-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar {
+  background-color: #b33a3a;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
