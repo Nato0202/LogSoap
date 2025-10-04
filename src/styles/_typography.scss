@@ -1,0 +1,55 @@
+/* Typography Hierarchy */
+h1.hero-title {
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 1rem 0;
+}
+
+h2.hero-subtitle {
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin: 0 0 1rem 0;
+  color: var(--secondary-color);
+}
+
+p.hero-description {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin: 0 0 2rem 0;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+h2.section-title,
+.card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+a,
+button {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+small,
+.tag {
+  font-weight: 500;
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.stats-number {
+  font-weight: 800;
+  font-size: 3rem;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
