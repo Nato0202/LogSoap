@@ -17,18 +17,10 @@ function Product() {
         </ul>
         <h2>Benefícios</h2>
         <ul>
-          <li>Aroma agradável e duradouro</li>
           <li>Hidratação da pele</li>
           <li>Produto artesanal e sustentável</li>
           <li>Ideal para uso diário</li>
         </ul>
-        <h2>Perguntas Frequentes</h2>
-        <dl>
-          <dt>O sabonete é indicado para peles sensíveis?</dt>
-          <dd>Sim, utilizamos ingredientes naturais que são suaves para a pele.</dd>
-          <dt>Posso comprar online?</dt>
-          <dd>Por enquanto, as vendas são feitas presencialmente na feira e via WhatsApp.</dd>
-        </dl>
       </div>
     </div>
   )
