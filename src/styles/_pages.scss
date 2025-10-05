@@ -1,130 +1,151 @@
 .page-container {
-  max-width: 900px;
+  max-width: min(900px, 90vw);
   margin: 80px auto 40px;
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-.content h1 {
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
+  @media (max-width: 768px) {
+    margin: 100px auto 40px;
+    padding: 15px;
+  }
 
-.content h2 {
-  color: var(--secondary-color);
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
+  .content {
+    h1 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+    }
 
-.content p, .content ul, .content dl {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--text-color);
-}
+    h2 {
+      color: var(--secondary-color);
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+    }
 
-.content ul, .content dl {
-  margin-left: 20px;
-}
+    p, ul, dl {
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      line-height: 1.5;
+      color: var(--text-color);
+    }
 
-.btn-primary {
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
+    ul, dl {
+      margin-left: 20px;
+    }
+  }
 
-.btn-primary:hover {
-  background-color: var(--secondary-color);
-}
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
 
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
 
-.product-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(179, 58, 58, 0.2);
-}
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 
-.product-image {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: min(250px, 90vw);
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(179, 58, 58, 0.2);
 
-.contact-form label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
+      @media (max-width: 640px) {
+        width: 100%;
+        max-width: 300px;
+      }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 4px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  resize: vertical;
-}
+      .product-image {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+    }
+  }
 
-.contact-form button {
-  margin-top: 10px;
-}
+  .contact-form {
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
 
-.social-links {
-  margin-top: 30px;
-  font-size: 1rem;
-}
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: clamp(0.9rem, 1.5vw, 1rem);
+      resize: vertical;
+    }
 
-.social-links a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 600;
-}
+    button {
+      margin-top: 10px;
+    }
+  }
 
-.social-links a:hover {
-  text-decoration: underline;
-}
+  .social-links {
+    margin-top: 30px;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
 
-.article-list {
-  list-style: none;
-  padding: 0;
-}
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
 
-.article-item {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
-}
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
-.team-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+  .article-list {
+    list-style: none;
+    padding: 0;
 
-.team-member {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  width: 200px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(179, 58, 58, 0.2);
+    .article-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+  }
+
+  .team-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .team-member {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: min(200px, 90vw);
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(179, 58, 58, 0.2);
+
+      @media (max-width: 640px) {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+  }
 }

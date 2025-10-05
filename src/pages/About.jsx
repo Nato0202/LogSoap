@@ -21,6 +21,11 @@ function About() {
           <li>Inovação</li>
           <li>Compromisso</li>
         </ul>
+        <h2>Contato</h2>
+        <p>Para mais informações e contato, siga nosso Instagram:</p>
+        <div className="social-links">
+          <a href="https://www.instagram.com/pelotao.log" target="_blank" rel="noopener noreferrer">Instagram: @pelotao.log</a>
+        </div>
       </div>
     </div>
   )

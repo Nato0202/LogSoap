@@ -99,13 +99,21 @@
   color: #d2691e;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.4s ease, transform 0.4s ease;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 2px solid #d2691e;
+  background: transparent;
+  display: inline-block;
+  transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
 }
 
 .social-links a:hover {
-  text-decoration: underline;
-  color: #a0522d;
-  transform: translateY(-1px);
+  background-color: #d2691e;
+  color: white !important;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(210, 105, 30, 0.4);
+  text-decoration: none;
 }
 
 .article-list {
@@ -134,4 +142,28 @@
   width: 200px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(179, 58, 58, 0.2);
+}
+
+/* Home page specific styles */
+.home-content {
+  .btn-primary {
+    margin: 10px 5px;
+
+    @media (max-width: 640px) {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 10px auto;
+    }
+  }
+
+  img {
+    width: 350px;
+    height: auto;
+
+    @media (max-width: 640px) {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
 }

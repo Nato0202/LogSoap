@@ -9,9 +9,7 @@ function NavBar() {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">Sobre Nós</Link></li>
         <li><Link to="/product">Produto</Link></li>
-        <li><Link to="/contact">Contato</Link></li>
         <li><Link to="/team">Equipe</Link></li>
-        <li><Link to="/policy">Política & Termos</Link></li>
       </ul>
     </nav>
   )

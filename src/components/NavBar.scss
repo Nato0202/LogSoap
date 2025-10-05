@@ -1,7 +1,9 @@
 .nav-bar {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  width: 100vw;
   background: linear-gradient(135deg, #b33a3a, #8a2c2c);
   padding: 25px 0 50px; /* further increased bottom padding for more space below buttons */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -17,6 +19,37 @@
   margin: 0;
   padding: 0;
   gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .nav-bar ul {
+    gap: 10px;
+    padding: 0 8px;
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-bar ul li a {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    height: auto;
+    line-height: normal;
+    border-radius: 20px;
+    border-width: 1.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar ul {
+    gap: 10px;
+    padding: 0 5px;
+  }
+
+  .nav-bar ul li a {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
 }
 
 .nav-bar ul li {
@@ -37,28 +70,27 @@
   transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
   z-index: 1;
+  height: 44px; /* fixed height */
+  line-height: 20px; /* fixed line height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 .nav-bar ul li a:hover,
 .nav-bar ul li a.active {
   background-color: #8a2c2c;
-  transform: scale(1.05); /* only scale, no translateY */
+  transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
-  display: inline-block;
-  padding: 14px 28px;
-  margin-bottom: 20px; /* further increased bottom margin for more space below buttons */
-  position: relative; /* ensure stacking context */
-  top: 0; /* prevent any vertical movement */
-  translate: none; /* explicitly remove any translate */
-  /* Remove conflicting translateY */
+  display: inline-flex;
+  padding: 12px 25px; /* keep padding same as normal state to avoid height change */
+  position: relative;
+  top: 0;
+  translate: none;
   will-change: transform;
-  /* Remove any translateY from other selectors */
-  transform: scale(1.05) !important;
-}
-
-.nav-bar ul li a::before {
-  content: none;
+  margin: 0;
 }
 
 .nav-bar ul li a::before {
@@ -87,3 +119,5 @@
   /* Removed translateY to prevent vertical movement */
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+

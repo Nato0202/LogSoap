@@ -7,9 +7,8 @@ import PelotaoPage from './pages/PelotaoPage'
 import Home from './pages/Home'
 import About from './pages/About'
 import Product from './pages/Product'
-import Contact from './pages/Contact'
 import Team from './pages/Team'
-import Policy from './pages/Policy'
+
 import './App.scss'
 
 function App() {
@@ -20,9 +19,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} />
-        <Route path="/contact" element={<Contact />} />
+
         <Route path="/team" element={<Team />} />
-        <Route path="/policy" element={<Policy />} />
+
         <Route path="/soap" element={<SoapPage />} />
         <Route path="/pelotao" element={<PelotaoPage />} />
       </Routes>

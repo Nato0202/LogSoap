@@ -4,15 +4,22 @@ import '../styles/main.scss'
 function Home() {
   return (
     <div className="page-container" style={{ backgroundColor: '#f9f9f9', color: '#333' }}>
-      <div className="content">
+      <div className="content home-content" style={{ textAlign: 'center' }}>
         <h1>Bem-vindo à LogSoap</h1>
         <p>
           LogSoap é um sabonete aromatizante desenvolvido por uma dedicada turma de logística.
           Nosso produto une qualidade, aroma e cuidado para você.
         </p>
-        <button className="btn-primary" onClick={() => window.location.href='/product'}>
+        <button className="btn-primary" style={{ display: 'inline-block', marginBottom: '10px' }} onClick={() => window.location.href='/about'}>
+          Conheça Sobre Nós
+        </button>
+        <br />
+        <button className="btn-primary" style={{ display: 'inline-block' }} onClick={() => window.location.href='/product'}>
           Conheça o Produto
         </button>
+        <div style={{ marginTop: '20px', textAlign: 'center' }}>
+          <img src="/images/soap.png" alt="LogSoap" style={{ width: '350px', height: 'auto' }} />
+        </div>
       </div>
     </div>
   )
