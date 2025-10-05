@@ -11,7 +11,7 @@ function About() {
           Nosso objetivo é criar produtos de qualidade que unem inovação e sustentabilidade.
         </p>
         <h2>Missão</h2>
-        <p>Oferecer sabonetes aromatizantes que proporcionem bem-estar e cuidado.</p>
+        <p>Oferecer sabonetes que proporcionem bem-estar e cuidado.</p>
         <h2>Visão</h2>
         <p>Ser referência em produtos artesanais de higiene e beleza na comunidade.</p>
         <h2>Valores</h2>
