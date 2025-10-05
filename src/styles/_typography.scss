@@ -4,6 +4,7 @@ h1.hero-title {
   font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.1;
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0 0 1rem 0;
