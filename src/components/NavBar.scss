@@ -42,29 +42,6 @@
 
 @media (max-width: 480px) {
   .nav-bar ul {
-    gap: 6px;
-    padding: 0 5px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
-  .nav-bar ul li a {
-    font-size: 0.7rem;
-    padding: 4px 8px;
-    height: 32px;
-    border-radius: 12px;
-    flex-grow: 1;
-    text-align: center;
-  }
-}
-
-@media (max-width: 360px) {
-  .nav-bar {
-    height: 50px;
-    padding: 10px 0 20px;
-  }
-
-  .nav-bar ul {
     gap: 4px;
     padding: 0 4px;
     flex-wrap: nowrap;
@@ -76,6 +53,29 @@
     padding: 3px 6px;
     height: 28px;
     border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-bar {
+    height: 45px;
+    padding: 8px 0 15px;
+  }
+
+  .nav-bar ul {
+    gap: 2px;
+    padding: 0 3px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .nav-bar ul li a {
+    font-size: 0.6rem;
+    padding: 2px 4px;
+    height: 24px;
+    border-radius: 8px;
     flex-grow: 1;
     text-align: center;
   }
