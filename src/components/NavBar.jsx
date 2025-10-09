@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <nav className="nav-bar">
       <ul>
-        <li><Link to="/">Home</Link></li>
+        <li><Link to="/">Início</Link></li>
         <li><Link to="/about">Sobre Nós</Link></li>
         <li><Link to="/product">Produto</Link></li>
         <li><Link to="/team">Equipe</Link></li>

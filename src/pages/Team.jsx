@@ -46,6 +46,7 @@ const teamGroups = [
   {
     role: 'Financeiro',
     members: [
+      { name: 'Douglas'},
       { name: 'Pablo' },
       { name: 'Kelvin' },
       { name: 'Renan Nunes' },
@@ -57,7 +58,7 @@ const teamGroups = [
 
 function Team() {
   return (
-    <div className="page-container" style={{ backgroundColor: '#fff', color: '#333' }}>
+    <div className="page-container team" style={{ backgroundColor: '#fff', color: '#333' }}>
       <div className="content">
         <h1>Equipe</h1>
         {teamGroups.map(group => (

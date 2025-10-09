@@ -44,11 +44,36 @@
   .nav-bar ul {
     gap: 10px;
     padding: 0 5px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .nav-bar ul li a {
-    font-size: 0.8rem;
-    padding: 8px 12px;
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    height: 36px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-bar {
+    height: 60px;
+    padding: 15px 0 30px;
+  }
+
+  .nav-bar ul {
+    gap: 8px;
+    padding: 0 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-bar ul li a {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+    height: 32px;
+    border-radius: 12px;
   }
 }
 
@@ -119,5 +144,3 @@
   /* Removed translateY to prevent vertical movement */
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-
-

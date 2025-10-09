@@ -1,0 +1,14 @@
+.page-container:not(.team) .content p, 
+.page-container:not(.team) .content ul, 
+.page-container:not(.team) .content dl {
+  background-color: #d0d0d0 !important;
+  padding: 12px 16px !important;
+  border-radius: 8px !important;
+  margin-bottom: 16px !important;
+  color: #333333 !important;
+}
+
+.page-container .content ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}

@@ -1,5 +1,7 @@
 import React from 'react'
 import './Page.scss'
+import '../styles/Common.scss'
+import './About.scss'
 
 function About() {
   return (
