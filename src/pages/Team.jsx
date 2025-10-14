@@ -34,6 +34,8 @@ const teamGroups = [
     role: 'Vendas',
     members: [
       { name: 'Arthur' },
+      { name: 'Antonio'},
+      { name: 'Bruno'},
       { name: 'Flávia' },
       { name: 'Kaique' },
       { name: 'Kauã' },
